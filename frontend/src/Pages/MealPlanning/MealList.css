@@ -1,0 +1,175 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.meals {
+  display: contents;
+  padding: 1rem;
+  font-size: medium;
+  block-size: auto;
+  justify-items: center;
+} */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nutrients {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nutrients-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.nutrients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nutrients-item {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.meals {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+.meal-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 700px;
+  width: 100%;
+}
+
+.secondPart {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.meal-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.meal-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.meal-info {
+  text-align: center;
+}
+
+.meal-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.meal-instructions {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.meal-instructions li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.meal-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.meal-link:hover {
+  background-color: #3e8e41;
+  color: #ffffff;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.controls > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mealInput {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  width: 250px;
+  margin-right: 10px;
+  background-color: transparent;
+  color: #333;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.mealInput:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.mealBtn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mealBtn:hover {
+  background-color: #3e8e41;
+}
