@@ -91,21 +91,29 @@ function App() {
                 path="/mealPlanning/:routeCalories?"
                 element={<Meal />}
               />
-              <Route exact path="/calender" element={<Calender />} />
+              <Route
+                exact
+                path="/calender"
+                element={user ? <Calender /> : <Navigate to="/" />}
+              />
               <Route path="/events/add" element={<AddEvents />} />
               <Route path="/event/:id/update" element={<UpdateEvent />} />
 
               <Route
                 path="/cart"
                 element={
-                  show ? (
-                    <Amazon handleClick={handleClick} />
+                  user ? (
+                    show ? (
+                      <Amazon handleClick={handleClick} />
+                    ) : (
+                      <Cart
+                        cart={cart}
+                        setCart={setCart}
+                        handleChange={handleChange}
+                      />
+                    )
                   ) : (
-                    <Cart
-                      cart={cart}
-                      setCart={setCart}
-                      handleChange={handleChange}
-                    />
+                    <Navigate to="/" />
                   )
                 }
               />

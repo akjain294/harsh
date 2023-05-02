@@ -4,8 +4,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import React, { useContext } from "react";
 import { Provider } from "react-redux";
-import store, { persistor } from './Components/Calender/Redux/store';
-import { PersistGate } from 'redux-persist/integration/react';
+import store, { persistor } from "./Components/Calender/Redux/store";
+import { PersistGate } from "redux-persist/integration/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
 import { UserContextProvider } from "./Contexts/UserContext";
@@ -19,7 +19,7 @@ root.render(
     <UserContextProvider>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-      <App />
+          <App />
         </PersistGate>
       </Provider>
     </UserContextProvider>
